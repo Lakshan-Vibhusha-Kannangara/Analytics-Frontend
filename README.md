@@ -1,16 +1,4 @@
-version: '3'
-services:
-  octopusbitestfront:
-    image: vibhushak/octopusbitestfrontend:latest
-    ports:
-      - "4200:80"
-    tty: true
 
-  backend:
-    image: vibhushak/octopusbitestbackend:latest
-    ports:
-      - "8080:8080"
-    tty: true
 
 
 
