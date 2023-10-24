@@ -1,19 +1,18 @@
-# Analytics-Frontend
-Analytics-Frontend
+version: '3'
+services:
+  octopusbitestfront:
+    image: vibhushak/octopusbitestfrontend:latest
+    ports:
+      - "4200:80"
+    tty: true
 
-## version: '3'
-## services:
-##  octopusbitestfront:
-##    image: vibhushak/octopusbitestfrontend:latest
-##    ports:
-##      - "4200:80"
-##    tty: true
+  backend:
+    image: vibhushak/octopusbitestbackend:latest
+    ports:
+      - "8080:8080"
+    tty: true
 
-##  backend:
-##    image: vibhushak/octopusbitestbackend:latest
-##    ports:
-##      - "8080:8080"
-##    tty: true
+
 
 
 https://github.com/Lakshan-Vibhusha-Kannangara/Analytics-Frontend/assets/77208138/5582b17c-c884-42a8-b761-3745befbe497
