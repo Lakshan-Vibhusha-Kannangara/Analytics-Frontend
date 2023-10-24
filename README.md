@@ -5,19 +5,35 @@ Analytics-Frontend
 
 # #############################################################################
 
-version: '3'
-services:
-  octopusbitestfront:
-    image: vibhushak/octopusbitestfrontend:latest
-    ports:
-      - "4200:80"
-    tty: true
+# Docker Compose Configuration for OctopusBitest
 
-  backend:
-    image: vibhushak/octopusbitestbackend:latest
-    ports:
-      - "8080:8080"
-    tty: true
+This Docker Compose configuration is used to run two containers, one for the OctopusBitest frontend and another for the backend.
+
+## Services
+
+### octopusbitestfront
+
+- Image: `vibhushak/octopusbitestfrontend:latest`
+- Ports mapping: Map port 80 in the container to port 4200 on the host.
+- `tty` is set to `true`, which allocates a pseudo-TTY for the container.
+
+This service is responsible for running the OctopusBitest frontend application.
+
+### backend
+
+- Image: `vibhushak/octopusbitestbackend:latest`
+- Ports mapping: Map port 8080 in the container to port 8080 on the host.
+- `tty` is set to `true`, which allocates a pseudo-TTY for the container.
+
+This service is responsible for running the OctopusBitest backend application.
+
+## Usage
+
+To use this Docker Compose configuration, make sure you have Docker and Docker Compose installed on your system. Then, you can start the services by running:
+
+```bash
+docker-compose up
+
 
 # #############################################################################
 
