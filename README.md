@@ -1,3 +1,12 @@
+# Database Design
+
+
+
+
+
+<img width="956" alt="Database" src="https://github.com/Lakshan-Vibhusha-Kannangara/Analytics-Frontend/assets/77208138/cf2b31e7-0046-445e-9638-8feb49dd8f42">
+
+
 
 
 
