@@ -12,7 +12,7 @@
 # System Design
 
 
-## Apache Kafka
+## Apache Kafka Distributed Stream
 
 
 
